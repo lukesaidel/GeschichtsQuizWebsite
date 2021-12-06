@@ -1,8 +1,10 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
+const exitButton = document.getElementById('exit-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+let correctAnswersTest = -9;
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -11,6 +13,7 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
+exitButton.addEventListener('click', exitPoints)
 
 function startGame() {
     console.log('Started')
@@ -59,8 +62,8 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+        exitButton.innerText = 'Exit'
+        exitButton.classList.remove('hide')
     }
 
 }
@@ -69,9 +72,19 @@ function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct')
+        correctAnswersTest = correctAnswersTest + 1;
     } else {
         element.classList.add('wrong')
     }
+}
+
+function exitPoints(exitText) {
+    questionContainerElement.classList.add('hide')
+    clearStatusClass(document.body)
+    exitButton.classList.add('hide')
+    alert("Richtige Antworten: " + correctAnswersTest)
+    startButton.innerText = 'Restart'
+        startButton.classList.remove('hide')
 }
 
 function clearStatusClass(element) {
@@ -170,6 +183,5 @@ const questions = [
 
         ]
     }
-
-
 ]
+

@@ -86,7 +86,7 @@ function exitPoints(exitText) {
     alert("Punktzahl: " +  correctAnswersTest + " von 9")
     
     startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+    startButton.classList.remove('hide')
 }
 
 function clearStatusClass(element) {

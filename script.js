@@ -84,35 +84,27 @@ function exitPoints(exitText) {
     exitButton.classList.add('hide')
     richtigeProzent = 0
     if correctAnswersTest = 9 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 100% Richtig")
+        richtige Prozent = 100
+    } else if correctAnswersTest = 8 {
+        richtigeProzent = 88,889
+    } else if correctAnswersTest = 7 {
+        richtigeProzent = 77,778
+    } else if correctAnswersTest = 6 {
+        richtigeProzent = 66,667
+    } else if correctAnswersTest = 5 {
+        richtigeProzent = 55,556
+    } else if correctAnswersTest = 4 {
+        richtigeProzent = 44,44
+    } else if correctAnswersTest = 3 {
+        richtigeProzent = 33,33
+    } else if correctAnswersTest = 2 {
+        richtigeProzent = 22,22
+    } else if correctAnswersTest = 1 {
+        richtigeProzent = 11,11
+    } else {
+        richtigeProzent = 0
     }
-    if correctAnswersTest = 8 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 88.889% Richtig")
-    }
-    if correctAnswersTest = 7 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 77,778% Richtig")
-    }
-    if correctAnswersTest = 6 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 66,667% Richtig")
-    }
-    if correctAnswersTest = 5 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 55,556% Richtig")
-    }
-    if correctAnswersTest = 4 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 44,44% Richtig")
-    }
-    if correctAnswersTest = 3 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 33,33% Richtig")
-    }
-    if correctAnswersTest = 2 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 22,22% Richtig")
-    }
-    if correctAnswersTest = 1 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 11,11% Richtig")
-    }
-    if correctAnswersTest = 0 {
-        alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, 0% Richtig")
-    }
+    
     startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
 }

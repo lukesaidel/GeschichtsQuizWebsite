@@ -82,7 +82,7 @@ function exitPoints(exitText) {
     questionContainerElement.classList.add('hide')
     clearStatusClass(document.body)
     exitButton.classList.add('hide')
-    richtigeProzent = 9 / correctAnswersTest
+    richtigeProzent = correctAnswersTest / 9
     alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, " + richtigeProzent + "%Richtig")
     startButton.innerText = 'Restart'
         startButton.classList.remove('hide')

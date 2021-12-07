@@ -82,7 +82,37 @@ function exitPoints(exitText) {
     questionContainerElement.classList.add('hide')
     clearStatusClass(document.body)
     exitButton.classList.add('hide')
-    richtigeProzent = correctAnswersTest / 9
+    richtigeProzent = 0
+    if correctAnswersTest = 9 {
+        richtigeProzent = 100
+    }
+    if correctAnswersTest = 8 {
+        richtigeProzent = 88,889
+    }
+    if correctAnswersTest = 7 {
+        richtigeProzent = 77,778
+    }
+    if correctAnswersTest = 6 {
+        richtigeProzent = 66,667
+    }
+    if correctAnswersTest = 5 {
+        richtigeProzent = 55,556
+    }
+    if correctAnswersTest = 4 {
+        richtigeProzent = 44,44
+    }
+    if correctAnswersTest = 3 {
+        richtigeProzent = 33,33
+    }
+    if correctAnswersTest = 2 {
+        richtigeProzent = 22,22
+    }
+    if correctAnswersTest = 1 {
+        richtigeProzent = 11,11
+    }
+    if correctAnswersTest = 0 {
+        richtigeProzent = 0
+    }
     alert("Richtige Antworten: " + correctAnswersTest + " Anzahl der Fragen: 9, " + richtigeProzent + "%Richtig")
     startButton.innerText = 'Restart'
         startButton.classList.remove('hide')

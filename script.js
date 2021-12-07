@@ -83,27 +83,7 @@ function exitPoints(exitText) {
     clearStatusClass(document.body)
     exitButton.classList.add('hide')
     richtigeProzent = 0
-    if correctAnswersTest = 9 {
-        richtige Prozent = 100
-    } else if correctAnswersTest = 8 {
-        richtigeProzent = 88,889
-    } else if correctAnswersTest = 7 {
-        richtigeProzent = 77,778
-    } else if correctAnswersTest = 6 {
-        richtigeProzent = 66,667
-    } else if correctAnswersTest = 5 {
-        richtigeProzent = 55,556
-    } else if correctAnswersTest = 4 {
-        richtigeProzent = 44,44
-    } else if correctAnswersTest = 3 {
-        richtigeProzent = 33,33
-    } else if correctAnswersTest = 2 {
-        richtigeProzent = 22,22
-    } else if correctAnswersTest = 1 {
-        richtigeProzent = 11,11
-    } else {
-        richtigeProzent = 0
-    }
+    alert("Punktzahl: " +  correctAnswersTest + " von 9")
     
     startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
